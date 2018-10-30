@@ -28,7 +28,18 @@
                     </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOk-fc-sBc">
                         <rect key="frame" x="255" y="6" width="51" height="31"/>
+                        <connections>
+                            <action selector="SwitchActionWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AcT-OV-K02"/>
+                        </connections>
                     </switch>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP4-Xw-zoP">
+                        <rect key="frame" x="153" y="21" width="9" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ZF5-dV-zd3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Hrn-If-xvE"/>
@@ -40,6 +51,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblName" destination="ZF5-dV-zd3" id="DIo-uV-4gg"/>
+                <outlet property="lblNumber" destination="kP4-Xw-zoP" id="UUh-X7-zhV"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

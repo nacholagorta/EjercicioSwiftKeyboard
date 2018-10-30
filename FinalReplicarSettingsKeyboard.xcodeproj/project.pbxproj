@@ -18,6 +18,8 @@
 		DDCB4F942180819E002144DB /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDCB4F922180819E002144DB /* GeneralViewController.xib */; };
 		DDCB4F982180892B002144DB /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB4F962180892A002144DB /* SwitchTableViewCell.swift */; };
 		DDCB4F992180892B002144DB /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDCB4F972180892B002144DB /* SwitchTableViewCell.xib */; };
+		DDCB4FA1218095C9002144DB /* FirstSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB4FA0218095C9002144DB /* FirstSection.swift */; };
+		DDCB4FA3218095D8002144DB /* SecondSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB4FA2218095D8002144DB /* SecondSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		DDCB4F922180819E002144DB /* GeneralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
 		DDCB4F962180892A002144DB /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		DDCB4F972180892B002144DB /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchTableViewCell.xib; sourceTree = "<group>"; };
+		DDCB4FA0218095C9002144DB /* FirstSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSection.swift; sourceTree = "<group>"; };
+		DDCB4FA2218095D8002144DB /* SecondSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,6 @@
 		DDCB4F66218076AC002144DB = {
 			isa = PBXGroup;
 			children = (
-				DDCB4F8C218077C1002144DB /* Cells */,
 				DDCB4F71218076AC002144DB /* FinalReplicarSettingsKeyboard */,
 				DDCB4F70218076AC002144DB /* Products */,
 			);
@@ -67,14 +70,13 @@
 		DDCB4F71218076AC002144DB /* FinalReplicarSettingsKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				DDCB4F9F2180952F002144DB /* Modelos */,
+				DDCB4F9E21809503002144DB /* ViewControllers */,
+				DDCB4F8C218077C1002144DB /* Cells */,
 				DDCB4F72218076AC002144DB /* AppDelegate.swift */,
 				DDCB4F79218076AF002144DB /* Assets.xcassets */,
 				DDCB4F7B218076AF002144DB /* LaunchScreen.storyboard */,
 				DDCB4F7E218076AF002144DB /* Info.plist */,
-				DDCB4F8821807759002144DB /* PrincipalViewController.swift */,
-				DDCB4F8921807759002144DB /* PrincipalViewController.xib */,
-				DDCB4F912180819E002144DB /* GeneralViewController.swift */,
-				DDCB4F922180819E002144DB /* GeneralViewController.xib */,
 			);
 			path = FinalReplicarSettingsKeyboard;
 			sourceTree = "<group>";
@@ -82,12 +84,64 @@
 		DDCB4F8C218077C1002144DB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DDCB4F9B21808FE7002144DB /* CellSwitch */,
+				DDCB4F9A21808FC3002144DB /* CellKeyboard */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DDCB4F9A21808FC3002144DB /* CellKeyboard */ = {
+			isa = PBXGroup;
+			children = (
 				DDCB4F8D218077DD002144DB /* KeyboardsTableViewCell.swift */,
 				DDCB4F8E218077DD002144DB /* KeyboardsTableViewCell.xib */,
+			);
+			path = CellKeyboard;
+			sourceTree = "<group>";
+		};
+		DDCB4F9B21808FE7002144DB /* CellSwitch */ = {
+			isa = PBXGroup;
+			children = (
 				DDCB4F962180892A002144DB /* SwitchTableViewCell.swift */,
 				DDCB4F972180892B002144DB /* SwitchTableViewCell.xib */,
 			);
-			path = Cells;
+			path = CellSwitch;
+			sourceTree = "<group>";
+		};
+		DDCB4F9C2180900D002144DB /* PrincipalVC */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB4F8821807759002144DB /* PrincipalViewController.swift */,
+				DDCB4F8921807759002144DB /* PrincipalViewController.xib */,
+			);
+			path = PrincipalVC;
+			sourceTree = "<group>";
+		};
+		DDCB4F9D2180902B002144DB /* GeneralVC */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB4F912180819E002144DB /* GeneralViewController.swift */,
+				DDCB4F922180819E002144DB /* GeneralViewController.xib */,
+			);
+			path = GeneralVC;
+			sourceTree = "<group>";
+		};
+		DDCB4F9E21809503002144DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB4F9C2180900D002144DB /* PrincipalVC */,
+				DDCB4F9D2180902B002144DB /* GeneralVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DDCB4F9F2180952F002144DB /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB4FA0218095C9002144DB /* FirstSection.swift */,
+				DDCB4FA2218095D8002144DB /* SecondSection.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +220,10 @@
 			files = (
 				DDCB4F8A21807759002144DB /* PrincipalViewController.swift in Sources */,
 				DDCB4F8F218077DD002144DB /* KeyboardsTableViewCell.swift in Sources */,
+				DDCB4FA3218095D8002144DB /* SecondSection.swift in Sources */,
 				DDCB4F982180892B002144DB /* SwitchTableViewCell.swift in Sources */,
 				DDCB4F73218076AC002144DB /* AppDelegate.swift in Sources */,
+				DDCB4FA1218095C9002144DB /* FirstSection.swift in Sources */,
 				DDCB4F932180819E002144DB /* GeneralViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

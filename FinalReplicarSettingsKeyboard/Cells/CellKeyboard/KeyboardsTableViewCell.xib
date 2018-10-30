@@ -43,6 +43,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblNombre" destination="90Y-3Q-eEd" id="Cjl-Xt-wI8"/>
+                <outlet property="lblNumber" destination="ICA-xL-8JZ" id="ovy-o3-gG9"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

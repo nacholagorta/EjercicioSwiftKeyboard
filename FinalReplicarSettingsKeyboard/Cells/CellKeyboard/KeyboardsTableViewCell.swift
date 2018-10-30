@@ -9,7 +9,10 @@
 import UIKit
 
 class KeyboardsTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var lblNumber: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

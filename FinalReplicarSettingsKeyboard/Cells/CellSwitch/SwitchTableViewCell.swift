@@ -8,8 +8,16 @@
 
 import UIKit
 
-class SwitchTableViewCell: UITableViewCell {
+protocol SwitchCambioDelegate: class{
+    func switchChangedAction(switchState: Bool) -> String
+}
 
+class SwitchTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblNumber: UILabel?
+    weak var delegate: SwitchCambioDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +29,9 @@ class SwitchTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func SwitchAction(sender: UISwitch){
+        
+   delegate?.switchChangedAction(switchState: sender.isOn)
+       
+}
 }
